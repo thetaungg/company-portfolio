@@ -1,11 +1,24 @@
 import { css } from "@emotion/react";
 
 export const header = css`
-  background-color: rebeccapurple;
-  margin-bottom: 1.5rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #424242;
+  padding: 1rem 0;
 `;
 
-export const wrapper = css`
-  margin: 0 auto;
-  padding: 1.45rem 1.0875rem;
+export const wrapper = css``;
+
+export const logoContainer = css`
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
 `;
