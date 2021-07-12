@@ -1,10 +1,14 @@
 import React, { ChangeEvent, FormEvent, useState } from "react";
-import * as styles from "./ContactForm.styles";
+import ReCAPTCHA from "react-google-recaptcha";
 import TextField from "../../common/TextField/TextField.component";
 import TextArea from "../../common/TextArea/TextArea.component";
-import ReCAPTCHA from "react-google-recaptcha";
+import * as styles from "./ContactForm.styles";
 
-const ContactForm = () => {
+interface ContactFormProps {
+  isVisible: boolean;
+}
+
+const ContactForm = ({ isVisible }: ContactFormProps) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -81,7 +85,7 @@ const ContactForm = () => {
       });
   };
   return (
-    <div css={styles.formContainer}>
+    <div css={styles.formContainer(isVisible)}>
       <form css={styles.form} onSubmit={onSubmit}>
         <div css={styles.formHeader}>
           <span>Let's Get in Touch</span>

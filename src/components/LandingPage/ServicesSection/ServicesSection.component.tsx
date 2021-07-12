@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import CheckMark from "../../../assets/images/icons/icons8-checkmark.inline.svg";
-import * as styles from "./ServicesSection.styles";
 import { NavigationContext } from "../../../contexts/navigation/navigation.context";
+import * as styles from "./ServicesSection.styles";
 
 const services = [
   {

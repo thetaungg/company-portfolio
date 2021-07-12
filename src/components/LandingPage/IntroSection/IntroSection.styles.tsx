@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { moveInLeft, moveInRight } from "../../animation.styles";
+import { moveInTop } from "../../animation.styles";
 
 export const container = css`
   width: 100%;
@@ -31,14 +31,14 @@ export const textContainer = (isVisible: boolean) => css`
   justify-content: center;
   padding-left: 4rem;
   transition: all 1.5s ease;
-  animation: ${moveInLeft} 0.5s ease-out;
+  animation: ${moveInTop} 0.5s ease-out;
 
   ${isVisible
     ? `
      transform: translateX(0); 
   `
     : `
-     transform: translateX(-80%);
+     transform: translateY(-80%);
   `}
 `;
 
@@ -69,7 +69,7 @@ export const illustration = (isVisible: boolean) => css`
 
   svg {
     width: 95%;
-    animation: ${moveInRight} 0.5s ease-out;
+    animation: ${moveInTop} 0.8s ease-out;
     transition: all 1s ease;
 
     ${isVisible
@@ -77,7 +77,7 @@ export const illustration = (isVisible: boolean) => css`
      transform: translateX(0);
   `
       : `
-     transform: translateX(80%);
+     transform: translateY(-80%);
   `}
   }
 

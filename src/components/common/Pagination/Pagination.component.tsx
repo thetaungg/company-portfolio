@@ -1,6 +1,6 @@
 import React, { HTMLProps, useContext, useEffect, useState } from "react";
-import * as styles from "./Pagination.styles";
 import { NavigationContext } from "../../../contexts/navigation/navigation.context";
+import * as styles from "./Pagination.styles";
 
 interface Props extends HTMLProps<HTMLDivElement> {}
 

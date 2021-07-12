@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `IT Solutions Company in Myanmar`,
-    description: `IT Solutions Company in Myanmar`,
+    title: `Cyber Genius - IT Solutions Company in Myanmar`,
+    description: `Startup IT Solutions Company in Myanmar`,
     author: `Thet Aung`,
   },
   plugins: [
@@ -47,8 +47,7 @@ module.exports = {
       resolve: `gatsby-plugin-s3`,
       options: {
         bucketName: "cybergenius",
-        protocol: "https",
-        hostname: "www.cybergenius.co",
+        acl: null,
       },
     },
   ],

@@ -7,7 +7,7 @@ import * as styles from "./SideBar.styles";
 const SideBar = () => (
   <div css={styles.sideBar}>
     <div css={styles.iconContainer}>
-      <a href="https://www.facebook.com" target="_blank" title="Our Facebook page">
+      <a href="https://www.facebook.com/cybergenius.co" target="_blank" title="Our Facebook page">
         <FacebookLogo />
       </a>
     </div>

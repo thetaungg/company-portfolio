@@ -21,7 +21,15 @@ export const heading = (isVisible: boolean) => css`
   `
     : `
      transform: translateX(-80%);
-  `}
+  `};
+
+  @media only screen and (max-width: 1125px) {
+    font-size: 7rem;
+  }
+
+  @media only screen and (max-width: 1065px) {
+    font-size: 6rem;
+  }
 `;
 
 export const services = css`
@@ -51,7 +59,15 @@ export const serviceHeading = (isVisible: boolean, orientation: "left" | "right"
   `
     : `
      transform: ${orientation === "left" ? "translateX(-60%)" : "translateX(60%)"} ;
-  `}
+  `};
+
+  @media only screen and (max-width: 1125px) {
+    font-size: 2.5rem;
+  }
+
+  @media only screen and (max-width: 1065px) {
+    font-size: 2rem;
+  }
 `;
 
 export const list = css`
@@ -81,7 +97,15 @@ export const listItem = (
   `
     : `
      transform: ${orientation === "left" ? "translateX(-60%)" : "translateX(60%)"} ;
-  `}
+  `};
+
+  @media only screen and (max-width: 1125px) {
+    font-size: 1.7rem;
+  }
+
+  @media only screen and (max-width: 1065px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const iconContainer = css`
@@ -101,4 +125,12 @@ export const serviceDetails = css`
   font-size: 1.4rem;
   font-weight: 400;
   margin-top: 0.5rem;
+
+  @media only screen and (max-width: 1125px) {
+    font-size: 1.3rem;
+  }
+
+  @media only screen and (max-width: 1065px) {
+    font-size: 1.2rem;
+  }
 `;

@@ -17,9 +17,18 @@ export const textContainer = css`
   margin-top: 2rem;
 `;
 
-export const text = css`
+export const heading = (isVisible: boolean) => css`
   font-size: 4rem;
   text-align: center;
+  transition: all 1s ease;
+
+  ${isVisible
+    ? `
+     transform: translateY(0); 
+  `
+    : `
+     transform: translateY(10rem);
+  `}
 `;
 
 export const contacts = css`
@@ -29,13 +38,22 @@ export const contacts = css`
   margin: 4rem auto 0;
 `;
 
-export const contact = css`
+export const contact = (isVisible: boolean, animiationTiming: number) => css`
   display: flex;
   flex-direction: column;
 
   &:not(:last-of-type) {
     margin-bottom: 4rem;
   }
+  transition: all ${animiationTiming}s ease;
+
+  ${isVisible
+    ? `
+     transform: translateY(0); 
+  `
+    : `
+     transform: translateY(15rem);
+  `}
 `;
 
 export const contactHeader = css`

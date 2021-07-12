@@ -1,24 +1,27 @@
-import React from "react";
-import * as styles from "./ContactSection.styles";
+import React, { useContext } from "react";
 import ContactForm from "../ContactForm/ContactForm.component";
 import LocationIcon from "../../../assets/images/icons/location.inline.svg";
 import EmailIcon from "../../../assets/images/icons/mail.inline.svg";
 import PhoneIcon from "../../../assets/images/icons/phone.inline.svg";
+import { NavigationContext } from "../../../contexts/navigation/navigation.context";
+import * as styles from "./ContactSection.styles";
 
 const ContactSection = () => {
+  const { currentPage } = useContext(NavigationContext);
+  const isVisible = () => currentPage === 3;
   return (
     <section css={styles.container}>
       <div css={styles.textContainer}>
-        <h1 css={styles.text}>Points of Contact</h1>
+        <h1 css={styles.heading(isVisible())}>Points of Contact</h1>
 
         <div css={styles.contacts}>
-          <div css={styles.contact}>
+          <div css={styles.contact(isVisible(), 1)}>
             <h5 css={styles.contactHeader}>
               <LocationIcon /> Address
             </h5>
             <p css={styles.contactText}>Yangon, Myanmar</p>
           </div>
-          <div css={styles.contact}>
+          <div css={styles.contact(isVisible(), 1.3)}>
             <h5 css={styles.contactHeader}>
               <EmailIcon /> Email
             </h5>
@@ -27,7 +30,7 @@ const ContactSection = () => {
             </a>
           </div>
 
-          <div css={styles.contact}>
+          <div css={styles.contact(isVisible(), 1.6)}>
             <h5 css={styles.contactHeader}>
               <PhoneIcon />
               Phone
@@ -39,7 +42,7 @@ const ContactSection = () => {
         </div>
       </div>
 
-      <ContactForm />
+      <ContactForm isVisible={isVisible()} />
     </section>
   );
 };

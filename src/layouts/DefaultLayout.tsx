@@ -7,7 +7,7 @@ import SEO from "../components/seo";
 import SideBar from "../components/common/SideBar/SideBar.component";
 import { NavigationProvider } from "../contexts/navigation/navigation.context";
 
-const DefaultLayout = ({ title = "IT Solutions Company in Myanmar", children }: LayoutProps) => {
+const DefaultLayout = ({ children }: LayoutProps) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -21,7 +21,7 @@ const DefaultLayout = ({ title = "IT Solutions Company in Myanmar", children }: 
   return (
     <>
       <NavigationProvider>
-        <SEO title={title} />
+        <SEO title={data.site.siteMetadata.title} />
         <HeaderComponent />
         <div css={body}>
           <SideBar />
@@ -46,7 +46,6 @@ const DefaultLayout = ({ title = "IT Solutions Company in Myanmar", children }: 
 
 interface LayoutProps {
   children: React.ReactNode;
-  title?: string;
 }
 
 const body = css`

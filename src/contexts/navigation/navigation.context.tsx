@@ -18,7 +18,6 @@ export const NavigationProvider = ({ children }: { children: ReactNode }) => {
 
   const onPageChange = (pageNumber: number) => {
     setCurrentPage(pageNumber);
-    console.log(pageNumber);
   };
 
   return (

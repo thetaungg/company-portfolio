@@ -1,6 +1,6 @@
 import { css } from "@emotion/react";
 
-export const formContainer = css`
+export const formContainer = (isVisible: boolean) => css`
   width: 50%;
   margin: 0 auto;
   background-color: #f5f5f5;
@@ -11,6 +11,7 @@ export const formContainer = css`
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+  transition: all 1s ease;
 
   /* custom scrollbar */
 
@@ -31,6 +32,14 @@ export const formContainer = css`
   ::-webkit-scrollbar-thumb:hover {
     background-color: #8b8a8a;
   }
+
+  ${isVisible
+    ? `
+     transform: translateY(0); 
+  `
+    : `
+     transform: translateY(50%);
+  `}
 `;
 
 export const form = css`

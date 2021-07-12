@@ -14,6 +14,7 @@
     "noEmit": true,
     "skipLibCheck": true,
     "types": [ "node","@emotion/react/types/css-prop"], // ** important
-    "moduleResolution": "node" //very important for recognizing packages
+    "moduleResolution": "node", //very important for recognizing packages
+    "noUnusedLocals": true,
   }
 }

@@ -1,7 +1,6 @@
-import React, { useContext, useEffect } from "react";
-import * as styles from "./Header.styles";
+import React, { useContext } from "react";
 import { NavigationContext } from "../../../contexts/navigation/navigation.context";
-// import logo from "../../assets/images/icons/logo-2.png";
+import * as styles from "./Header.styles";
 
 const HeaderComponent = () => {
   const { onPageChange } = useContext(NavigationContext);
