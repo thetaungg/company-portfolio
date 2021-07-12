@@ -1,3 +1,5 @@
+@import "typography.css";
+
 :root {
   /* colors */
   --default-font-color: #424242;
@@ -8,7 +10,6 @@
 }
 
 html {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 62.5%; /*1rem = 10px now*/
   word-spacing: 1px;
@@ -54,8 +55,16 @@ html {
 body {
   font-size: 1.4rem;
   color: #424242;
+  font-family: Neue Einstellung, "Helvetica", Arial,sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins", sans-serif;
+  /*font-family: "Poppins", sans-serif;*/
+  font-family: "Fredoka One", cursive;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
 }

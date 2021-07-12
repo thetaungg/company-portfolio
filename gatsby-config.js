@@ -1,19 +1,22 @@
 module.exports = {
   siteMetadata: {
-    title: `My Portfolio`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `IT Solutions Company in Myanmar`,
+    description: `IT Solutions Company in Myanmar`,
     author: `Thet Aung`,
   },
   plugins: [
     {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /\.inline\.svg$/,
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `roboto`,
-          `source sans pro\:300,400,500`, // you can also specify font weights and styles
-          `poppins`,
-          `source sans pro\:400,500,600`, // you can also specify font weights and styles
-        ],
+        fonts: [`Fredoka+One`],
         display: "swap",
       },
     },
@@ -23,7 +26,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -37,7 +40,15 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/genius-b-01.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/genius-b-01.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "cybergenius",
+        protocol: "https",
+        hostname: "www.cybergenius.co",
       },
     },
   ],

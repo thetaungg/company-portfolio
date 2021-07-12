@@ -1,0 +1,105 @@
+@font-face {
+    font-family: Neue Einstellung;
+    src: local("NeueEinstellung-SemiBold"), url(fonts/23pGLov.woff2) format("woff2"),
+    url(fonts/32pWASy.woff) format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: Neue Einstellung;
+    src: local("NeueEinstellung-Thin"), url(fonts/2fCplIK.woff2) format("woff2"),
+    url(fonts/1D8lW7G.woff) format("woff");
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: Neue Einstellung;
+    src: local("NeueEinstellung-ExtraBold"), url(fonts/3FA2SJo.woff2) format("woff2"),
+    url(fonts/1cNoVrG.woff) format("woff");
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: Neue Einstellung;
+    src: local("NeueEinstellung-Black"), url(fonts/ixbr3lb.woff2) format("woff2"),
+    url(fonts/31B9yHt.woff) format("woff");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: Neue Einstellung;
+    src: local("NeueEinstellung-Medium"), url(fonts/13ZL4D5.woff2) format("woff2"),
+    url(fonts/2vntkyX.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: Neue Einstellung;
+    src: local("NeueEinstellung-Light"), url(fonts/2RrPByu.woff2) format("woff2"),
+    url(fonts/1Q0RZdt.woff) format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: Neue Einstellung;
+    src: local("NeueEinstellung-Regular"), url(fonts/2ouwpzi.woff2) format("woff2"),
+    url(fonts/2pyXnS9.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Neue Einstellung;
+    src: local("Neue Einstellung SemiBold"), local("NeueEinstellung-SemiBold"),
+    url(fonts/23pGLov.woff2) format("woff2"), url(fonts/32pWASy.woff) format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: Neue Einstellung;
+    src: local("Neue Einstellung ExtraBold"), local("NeueEinstellung-ExtraBold"),
+    url(fonts/3FA2SJo.woff2) format("woff2"), url(fonts/1cNoVrG.woff) format("woff");
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: Neue Einstellung;
+    src: local("Neue Einstellung Light"), local("NeueEinstellung-Light"),
+    url(fonts/2RrPByu.woff2) format("woff2"), url(fonts/1Q0RZdt.woff) format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: Neue Einstellung;
+    src: local("Neue Einstellung Thin"), local("NeueEinstellung-Thin"),
+    url(fonts/2fCplIK.woff2) format("woff2"), url(fonts/1D8lW7G.woff) format("woff");
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: Neue Einstellung;
+    src: local("Neue Einstellung Bold"), local("NeueEinstellung-Bold"),
+    url(fonts/2NFO1To.woff2) format("woff2"), url(fonts/36eLL15.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: Neue Einstellung;
+    src: local("Neue Einstellung Medium"), local("NeueEinstellung-Medium"),
+    url(fonts/13ZL4D5.woff2) format("woff2"), url(fonts/2vntkyX.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: Neue Einstellung;
+    src: local("Neue Einstellung Regular"), local("NeueEinstellung-Regular"),
+    url(fonts/2ouwpzi.woff2) format("woff2"), url(fonts/2pyXnS9.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Neue Einstellung;
+    src: local("Neue Einstellung Black"), local("NeueEinstellung-Black"),
+    url(fonts/ixbr3lb.woff2) format("woff2"), url(fonts/31B9yHt.woff) format("woff");
+    font-weight: 900;
+    font-style: normal;
+}
