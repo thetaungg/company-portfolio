@@ -9,7 +9,9 @@ const HeaderComponent = () => {
     <header css={styles.header}>
       <div css={styles.wrapper}>
         <div css={styles.logoContainer}>
-          <h1 style={{ fontSize: "3.5rem" }}>CYBER GENIUS</h1>
+          <a href="#" css={styles.name}>
+            CYBER GENIUS
+          </a>
         </div>
 
         {/*<h1 css={styles.name}>CyberGenius</h1>*/}

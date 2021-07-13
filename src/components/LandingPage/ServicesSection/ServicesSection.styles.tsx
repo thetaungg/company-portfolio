@@ -9,6 +9,17 @@ export const container = css`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @media only screen and (max-width: 1065px) {
+    padding: 8rem 8rem 4rem;
+  }
+  @media only screen and (max-width: 650px) {
+    padding: 8rem 4rem 4rem;
+  }
+
+  @media only screen and (max-width: 465px) {
+    padding: 8rem 2rem 2rem;
+  }
 `;
 
 export const heading = (isVisible: boolean) => css`
@@ -30,12 +41,22 @@ export const heading = (isVisible: boolean) => css`
   @media only screen and (max-width: 1065px) {
     font-size: 6rem;
   }
+  @media only screen and (max-width: 975px) {
+    font-size: 5rem;
+  }
+
+  @media only screen and (max-width: 650px) {
+    font-size: 4rem;
+  }
 `;
 
 export const services = css`
   display: flex;
   margin-top: 3rem;
   flex-grow: 1;
+  @media only screen and (max-width: 650px) {
+    flex-direction: column;
+  }
 `;
 
 export const textGroup = css`
@@ -68,12 +89,20 @@ export const serviceHeading = (isVisible: boolean, orientation: "left" | "right"
   @media only screen and (max-width: 1065px) {
     font-size: 2rem;
   }
+  @media only screen and (max-width: 975px) {
+    font-size: 2rem;
+  }
 `;
 
 export const list = css`
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
+
+  @media only screen and (max-width: 650px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 
 export const listItem = (
@@ -106,6 +135,20 @@ export const listItem = (
   @media only screen and (max-width: 1065px) {
     font-size: 1.5rem;
   }
+
+  @media only screen and (max-width: 975px) {
+    font-size: 1.4rem;
+
+    &:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    &:not(:last-of-type) {
+      margin-bottom: 3rem;
+    }
+  }
 `;
 
 export const iconContainer = css`
@@ -132,5 +175,12 @@ export const serviceDetails = css`
 
   @media only screen and (max-width: 1065px) {
     font-size: 1.2rem;
+  }
+
+  @media only screen and (max-width: 975px) {
+    font-size: 1.1rem;
+  }
+  @media only screen and (max-width: 650px) and (max-height: 813px) {
+    display: none;
   }
 `;

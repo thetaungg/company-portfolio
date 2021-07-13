@@ -48,6 +48,10 @@ export const upArrow = css`
   svg {
     animation: ${upAndNormal} 1.5s linear infinite;
   }
+
+  @media only screen and (max-width: 565px) {
+    top: 3rem;
+  }
 `;
 
 export const downArrow = css`
@@ -56,5 +60,9 @@ export const downArrow = css`
 
   svg {
     animation: ${downAndNormal} 1.5s linear infinite;
+  }
+
+  @media only screen and (max-width: 565px) {
+    bottom: 1rem;
   }
 `;

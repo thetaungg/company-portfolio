@@ -14,11 +14,17 @@ export const sideBar = css`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 695px) {
+    left: 1rem;
+  }
+
+  @media only screen and (max-width: 650px) {
+    display: none;
+  }
 `;
 
 export const iconContainer = css`
-  height: 4rem;
-  width: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -10,6 +10,17 @@ export const header = css`
   flex-direction: column;
   justify-content: center;
   padding: 2rem 3rem 0 3rem;
+
+  @media only screen and (max-width: 695px) {
+    padding: 2rem 3rem 0 1.5rem;
+  }
+
+  @media only screen and (max-width: 650px) {
+    padding: 3rem 3rem 0 2.5rem;
+  }
+  @media only screen and (max-width: 465px) {
+    padding: 2rem 2rem 0 1rem;
+  }
 `;
 
 export const wrapper = css`
@@ -36,16 +47,28 @@ export const logoContainer = css`
 `;
 
 export const name = css`
-  font-size: 4rem;
+  font-size: 3.5rem;
+  color: #f5f5f5;
   font-family: "Fredoka One", cursive;
   font-weight: 400;
   margin-left: 1rem;
+
+  @media only screen and (max-width: 650px) {
+    font-size: 3rem;
+  }
+  @media only screen and (max-width: 465px) {
+    font-size: 2.5rem;
+  }
 `;
 
 export const links = css`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: 695px) {
+    display: none;
+  }
 `;
 
 export const link = css`

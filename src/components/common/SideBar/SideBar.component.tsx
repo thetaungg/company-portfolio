@@ -12,7 +12,10 @@ const SideBar = () => (
       </a>
     </div>
     <div css={styles.iconContainer}>
-      <a href="https://www.linkedin.com" target="_blank" title="Our LinkedIn page">
+      <a
+        href="https://www.linkedin.com/company/cybergenius-co"
+        target="_blank"
+        title="Our LinkedIn page">
         <LinkedInLogo />
       </a>
     </div>

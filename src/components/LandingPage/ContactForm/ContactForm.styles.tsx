@@ -13,6 +13,15 @@ export const formContainer = (isVisible: boolean) => css`
   flex-direction: column;
   transition: all 1s ease;
 
+  @media only screen and (max-width: 1065px) {
+    width: 60%;
+    padding: 1rem 2rem;
+  }
+  @media only screen and (max-width: 650px) {
+    width: 100%;
+    flex-grow: 1;
+  }
+
   /* custom scrollbar */
 
   ::-webkit-scrollbar {

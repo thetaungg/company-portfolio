@@ -32,9 +32,11 @@ const IntroSection = () => {
           key={index}
           onTypingDone={onTypingDone}>
           <h1 css={styles.headingText}>{text2[index]}</h1>
-          <h1 css={styles.headingText}>{texts[index]}</h1>{" "}
+          <h1 css={styles.headingText} style={{ minHeight: "3em" }}>
+            {texts[index]}
+          </h1>{" "}
           {/*don't want typist to remove entire line since the texts are align centered if we remove this one the other 2 from above will go down. So, during the animations the texts will go up and down and we don't want that*/}
-          <Typist.Backspace count={texts[index].length + text2[index].length} delay={3000} />
+          <Typist.Backspace count={texts[index].length + text2[index].length} delay={3000} />{" "}
         </Typist>
       </div>
       <WobblyContainer css={styles.illustration(isVisible())}>

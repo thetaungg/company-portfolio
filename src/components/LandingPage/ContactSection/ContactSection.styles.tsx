@@ -8,6 +8,21 @@ export const container = css`
   position: relative;
   background: #1d334f;
   color: #fff;
+
+  @media only screen and (max-width: 1065px) {
+    padding: 8rem 8rem 4rem;
+  }
+  @media only screen and (max-width: 650px) {
+    padding: 6rem 4rem 5rem;
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: 465px) {
+    padding: 5rem 2rem 5rem;
+  }
+  @media only screen and (max-width: 465px) and (max-height: 784px) {
+    padding: 10rem 0.5rem 5rem;
+  }
 `;
 
 export const textContainer = css`
@@ -15,6 +30,10 @@ export const textContainer = css`
   flex-direction: column;
   flex-grow: 1;
   margin-top: 2rem;
+
+  @media only screen and (max-width: 465px) and (max-height: 784px) {
+    display: none;
+  }
 `;
 
 export const heading = (isVisible: boolean) => css`
@@ -28,7 +47,14 @@ export const heading = (isVisible: boolean) => css`
   `
     : `
      transform: translateY(10rem);
-  `}
+  `};
+
+  @media only screen and (max-width: 1065px) {
+    font-size: 3rem;
+  }
+  @media only screen and (max-width: 650px) {
+    display: none;
+  }
 `;
 
 export const contacts = css`
@@ -36,6 +62,19 @@ export const contacts = css`
   flex-direction: column;
   width: fit-content;
   margin: 4rem auto 0;
+
+  @media only screen and (max-width: 650px) {
+    flex-direction: row;
+  }
+  @media only screen and (max-width: 575px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+  }
+  @media only screen and (max-width: 465px) {
+    flex-direction: row;
+    padding: 0 2rem;
+  }
 `;
 
 export const contact = (isVisible: boolean, animiationTiming: number) => css`
@@ -53,7 +92,24 @@ export const contact = (isVisible: boolean, animiationTiming: number) => css`
   `
     : `
      transform: translateY(15rem);
-  `}
+  `};
+
+  @media only screen and (max-width: 650px) {
+    &:not(:last-of-type) {
+      margin-right: 3rem;
+      margin-bottom: 0;
+    }
+  }
+  @media only screen and (max-width: 465px) and (max-height: 875px) {
+    &:nth-child(3) {
+      p {
+        &:nth-child(3),
+        &:nth-child(4) {
+          display: none;
+        }
+      }
+    }
+  }
 `;
 
 export const contactHeader = css`
@@ -67,6 +123,10 @@ export const contactHeader = css`
     width: 2rem;
     fill: #f5f5f5;
   }
+
+  @media only screen and (max-width: 1065px) {
+    font-size: 1.8rem;
+  }
 `;
 
 export const contactText = css`
@@ -75,5 +135,9 @@ export const contactText = css`
 
   &:not(:last-of-type) {
     margin-bottom: 0.8rem;
+  }
+
+  @media only screen and (max-width: 1065px) {
+    font-size: 1.4rem;
   }
 `;

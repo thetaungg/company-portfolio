@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Cyber Genius - IT Solutions Company in Myanmar`,
-    description: `Startup IT Solutions Company in Myanmar`,
+    title: `Cyber Genius - IT Service and Software Company in Myanmar`,
+    description: `IT Service and Software Company in Myanmar`,
     author: `Thet Aung`,
   },
   plugins: [

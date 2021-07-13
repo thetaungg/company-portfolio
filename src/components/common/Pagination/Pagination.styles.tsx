@@ -8,6 +8,7 @@ export const pagination = css`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  z-index: 10;
 `;
 
 export const marker = (currentPage: boolean) => css`
@@ -25,5 +26,12 @@ export const marker = (currentPage: boolean) => css`
     : ``}
   &:not(:last-of-type) {
     margin-bottom: 1.5rem;
+  }
+
+  @media only screen and (max-width: 650px) {
+    height: 0.8rem;
+    &:not(:last-of-type) {
+      margin-bottom: 3rem;
+    }
   }
 `;
