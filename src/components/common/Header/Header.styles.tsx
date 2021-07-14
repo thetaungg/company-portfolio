@@ -57,7 +57,7 @@ export const name = css`
     font-size: 3rem;
   }
   @media only screen and (max-width: 465px) {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 `;
 

@@ -48,6 +48,9 @@ export const heading = (isVisible: boolean) => css`
   @media only screen and (max-width: 650px) {
     font-size: 4rem;
   }
+  @media only screen and (max-width: 465px) {
+    font-size: 3rem;
+  }
 `;
 
 export const services = css`
@@ -56,6 +59,7 @@ export const services = css`
   flex-grow: 1;
   @media only screen and (max-width: 650px) {
     flex-direction: column;
+    margin-top: 2rem;
   }
 `;
 
@@ -65,6 +69,10 @@ export const textGroup = css`
 
   &:not(:last-of-type) {
     margin-right: 4rem;
+
+    @media only screen and (max-width: 650px) {
+      margin-right: 0;
+    }
   }
 `;
 
@@ -92,6 +100,9 @@ export const serviceHeading = (isVisible: boolean, orientation: "left" | "right"
   @media only screen and (max-width: 975px) {
     font-size: 2rem;
   }
+  @media only screen and (max-width: 650px) {
+    font-size: 1.8rem;
+  }
 `;
 
 export const list = css`
@@ -102,6 +113,7 @@ export const list = css`
   @media only screen and (max-width: 650px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
   }
 `;
 
@@ -156,6 +168,12 @@ export const iconContainer = css`
   margin-top: -1rem;
   svg {
     width: 4rem;
+  }
+
+  @media only screen and (max-width: 650px) {
+    svg {
+      width: 3rem;
+    }
   }
 `;
 

@@ -101,10 +101,10 @@ export const contact = (isVisible: boolean, animiationTiming: number) => css`
     }
   }
   @media only screen and (max-width: 465px) and (max-height: 875px) {
-    &:nth-child(3) {
+    &:nth-of-type(3) {
       p {
-        &:nth-child(3),
-        &:nth-child(4) {
+        &:nth-of-type(3),
+        &:nth-of-type(4) {
           display: none;
         }
       }

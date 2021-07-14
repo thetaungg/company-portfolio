@@ -30,6 +30,15 @@ const commonArrowStyles = css`
     width: 9rem;
     height: 9rem;
     fill: #fff;
+
+    @media only screen and (max-width: 650px) {
+      width: 7rem;
+      height: 7rem;
+    }
+    @media only screen and (max-width: 465px) {
+      width: 6rem;
+      height: 6rem;
+    }
   }
 
   &:hover {

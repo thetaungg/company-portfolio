@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { NavigationContext } from "../../../contexts/navigation/navigation.context";
 import * as styles from "./Header.styles";
+import NavBtn from "../NavBtn/NavBtn.component";
 
 const HeaderComponent = () => {
   const { onPageChange } = useContext(NavigationContext);
@@ -26,6 +27,7 @@ const HeaderComponent = () => {
             Contact
           </span>
         </div>
+        <NavBtn />
       </div>
     </header>
   );
