@@ -73,7 +73,7 @@ export const navigationBg = (isOpen: boolean) => css`
 
   ${isOpen &&
   `
-    transition: width .9s cubic-bezier(.2,1,.2,1) 0s,min-width .9s cubic-bezier(.2,1,.2,1) 0s;
+    transition: width 1.3s cubic-bezier(.2,1,.2,1) 0s,min-width 1.3s cubic-bezier(.2,1,.2,1) 0s;
     width: 230vh;
     min-width: 220vw;
   `};
@@ -146,7 +146,7 @@ export const navItems = (isOpen: boolean) => css`
   z-index: 1;
   visibility: hidden;
   opacity: 0;
-  transition: left 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+  transition: left 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55),
     opacity 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
   ${isOpen &&
@@ -170,7 +170,7 @@ export const navItem = css`
 
 export const socialItems = (isOpen: boolean) => css`
   position: absolute;
-  top: calc(100vh - 140px);
+  top: calc(100vh - 16rem);
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -189,8 +189,8 @@ export const socialItems = (isOpen: boolean) => css`
 
 export const socialItem = css`
   svg {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
     fill: #fff;
   }
   &:not(:last-child) {

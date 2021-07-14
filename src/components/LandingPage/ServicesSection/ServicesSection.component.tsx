@@ -12,12 +12,13 @@ const services = [
         id: 20,
         name: "IT Outsourcing Service",
         desc:
-          "With this service, you can sit back and relax. We’ve got your IT Systems covered with unlimited support all day, every day",
+          "Sit back and relax: We’ve got your IT Systems covered with unlimited support all day, every day",
       },
       {
         id: 28,
         name: "Digital Marketing",
-        desc: "With Social Media Marketing and Search Engine Optimization, we'll t",
+        desc:
+          "With Social Media Marketing, SEO, and training your employees, we'll transform your marketing team into the next level.",
       },
       {
         id: 35,
@@ -32,27 +33,27 @@ const services = [
     items: [
       {
         id: 21,
-        name: "Web & Mobile Development",
+        name: "Web Development",
         desc:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ea, laboriosam Accusamus animi assumenda",
+          "Quality is our main focus. We leverage the latest technologies available(React, Vue, Node, etc) and deliver you the most reliable products.",
       },
       {
         id: 27,
         name: "Web Application Maintenance",
         desc:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ea, laboriosam Accusamus animi assumenda",
+          "We can help you update your website, fix bugs, resolve security risks, and migrate into the new and better frameworks.",
       },
       {
         id: 32,
-        name: "System Integration",
+        name: "Web Hosting",
         desc:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ea, laboriosam Accusamus animi assumenda",
+          "Let us worry about all the complex server setups for hosting and security for your website.",
       },
       {
         id: 38,
-        name: "Web Hosting",
+        name: "System Integration",
         desc:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ea, laboriosam Accusamus animi assumenda",
+          "If you want to integrate your existing platform with third-party systems, like Stripe, Wave Money, Google Maps, etc, we can help you with that.",
       },
     ],
   },
