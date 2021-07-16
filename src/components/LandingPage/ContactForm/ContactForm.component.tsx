@@ -113,6 +113,7 @@ const ContactForm = ({ isVisible }: ContactFormProps) => {
         <TextField
           css={styles.input}
           id="email"
+          type="email"
           label="Email address*"
           value={email}
           onChange={(e: ChangeEvent<HTMLInputElement>) => onChange("email", e)}

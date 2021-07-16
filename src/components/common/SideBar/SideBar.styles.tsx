@@ -39,7 +39,7 @@ export const iconContainer = css`
   }
 
   &:not(:last-of-type) {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
   &:hover {

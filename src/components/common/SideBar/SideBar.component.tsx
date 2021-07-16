@@ -20,7 +20,7 @@ const SideBar = () => (
       </a>
     </div>
     <div css={styles.iconContainer}>
-      <a href="mailto:contactus@cybergenius.co" title="Email us">
+      <a href="mailto:contactus@cybergenius.co" title="Email us at contactus@cybergenius.co">
         <EmailLogo />
       </a>
     </div>

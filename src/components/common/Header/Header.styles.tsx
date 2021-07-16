@@ -9,17 +9,17 @@ export const header = css`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem 3rem 0 3rem;
+  padding: 2rem 5rem 0 3rem;
 
   @media only screen and (max-width: 695px) {
-    padding: 2rem 3rem 0 1.5rem;
+    padding: 2rem 5rem 0 1.5rem;
   }
 
   @media only screen and (max-width: 650px) {
-    padding: 3rem 3rem 0 2.5rem;
+    padding: 3rem 5rem 0 2.5rem;
   }
   @media only screen and (max-width: 465px) {
-    padding: 2rem 2rem 0 1rem;
+    padding: 2rem 3rem 0 1rem;
   }
 `;
 
@@ -57,7 +57,7 @@ export const name = css`
     font-size: 3rem;
   }
   @media only screen and (max-width: 465px) {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 `;
 
