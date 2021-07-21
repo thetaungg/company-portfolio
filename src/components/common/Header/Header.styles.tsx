@@ -49,8 +49,8 @@ export const logoContainer = css`
 export const name = css`
   font-size: 3.5rem;
   color: #f5f5f5;
-  font-family: "Fredoka One", cursive;
-  font-weight: 400;
+  font-family: "AvertaStd", cursive;
+  font-weight: 900;
   margin-left: 1rem;
 
   @media only screen and (max-width: 650px) {
@@ -74,6 +74,7 @@ export const links = css`
 export const link = css`
   font-size: 2rem;
   color: #fff;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
 

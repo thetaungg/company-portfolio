@@ -1,105 +1,71 @@
 @font-face {
-    font-family: Neue Einstellung;
-    src: local("NeueEinstellung-SemiBold"), url(fonts/23pGLov.woff2) format("woff2"),
-    url(fonts/32pWASy.woff) format("woff");
-    font-weight: 600;
-    font-style: normal;
-}
-@font-face {
-    font-family: Neue Einstellung;
-    src: local("NeueEinstellung-Thin"), url(fonts/2fCplIK.woff2) format("woff2"),
-    url(fonts/1D8lW7G.woff) format("woff");
-    font-weight: 100;
-    font-style: normal;
-}
-@font-face {
-    font-family: Neue Einstellung;
-    src: local("NeueEinstellung-ExtraBold"), url(fonts/3FA2SJo.woff2) format("woff2"),
-    url(fonts/1cNoVrG.woff) format("woff");
-    font-weight: 800;
-    font-style: normal;
-}
-@font-face {
-    font-family: Neue Einstellung;
-    src: local("NeueEinstellung-Black"), url(fonts/ixbr3lb.woff2) format("woff2"),
-    url(fonts/31B9yHt.woff) format("woff");
+    font-family: 'AvertaStd';
+    src: url('fonts/AvertaStd-Black.woff2') format('woff2'),
+    url('fonts/AvertaStd-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
+    font-display: swap;
 }
+
 @font-face {
-    font-family: Neue Einstellung;
-    src: local("NeueEinstellung-Medium"), url(fonts/13ZL4D5.woff2) format("woff2"),
-    url(fonts/2vntkyX.woff) format("woff");
-    font-weight: 500;
+    font-family: 'AvertaStd';
+    src: url('fonts/AvertaStd-ExtraBold.woff2') format('woff2'),
+    url('fonts/AvertaStd-ExtraBold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
+
 @font-face {
-    font-family: Neue Einstellung;
-    src: local("NeueEinstellung-Light"), url(fonts/2RrPByu.woff2) format("woff2"),
-    url(fonts/1Q0RZdt.woff) format("woff");
-    font-weight: 300;
+    font-family: 'AvertaStd';
+    src: url('fonts/AvertaStd-Bold.woff2') format('woff2'),
+    url('fonts/AvertaStd-Bold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
+
 @font-face {
-    font-family: Neue Einstellung;
-    src: local("NeueEinstellung-Regular"), url(fonts/2ouwpzi.woff2) format("woff2"),
-    url(fonts/2pyXnS9.woff) format("woff");
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: Neue Einstellung;
-    src: local("Neue Einstellung SemiBold"), local("NeueEinstellung-SemiBold"),
-    url(fonts/23pGLov.woff2) format("woff2"), url(fonts/32pWASy.woff) format("woff");
+    font-family: 'AvertaStd';
+    src: url('fonts/AvertaStd-Semibold.woff2') format('woff2'),
+    url('fonts/AvertaStd-Semibold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
 }
+
 @font-face {
-    font-family: Neue Einstellung;
-    src: local("Neue Einstellung ExtraBold"), local("NeueEinstellung-ExtraBold"),
-    url(fonts/3FA2SJo.woff2) format("woff2"), url(fonts/1cNoVrG.woff) format("woff");
-    font-weight: 800;
+    font-family: 'AvertaStd';
+    src: url('fonts/AvertaStd-Regular.woff2') format('woff2'),
+    url('fonts/AvertaStd-Regular.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
+
 @font-face {
-    font-family: Neue Einstellung;
-    src: local("Neue Einstellung Light"), local("NeueEinstellung-Light"),
-    url(fonts/2RrPByu.woff2) format("woff2"), url(fonts/1Q0RZdt.woff) format("woff");
+    font-family: 'AvertaStd';
+    src: url('fonts/AvertaStd-Light.woff2') format('woff2'),
+    url('fonts/AvertaStd-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
+
 @font-face {
-    font-family: Neue Einstellung;
-    src: local("Neue Einstellung Thin"), local("NeueEinstellung-Thin"),
-    url(fonts/2fCplIK.woff2) format("woff2"), url(fonts/1D8lW7G.woff) format("woff");
+    font-family: 'AvertaStd';
+    src: url('fonts/AvertaStd-Thin.woff2') format('woff2'),
+    url('fonts/AvertaStd-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
+    font-display: swap;
 }
+
 @font-face {
-    font-family: Neue Einstellung;
-    src: local("Neue Einstellung Bold"), local("NeueEinstellung-Bold"),
-    url(fonts/2NFO1To.woff2) format("woff2"), url(fonts/36eLL15.woff) format("woff");
-    font-weight: 700;
+    font-family: 'AvertaStd-Extrathin';
+    src: url('fonts/AvertaStd-Extrathin.woff2') format('woff2'),
+    url('fonts/AvertaStd-Extrathin.woff') format('woff');
+    font-weight: 100;
     font-style: normal;
-}
-@font-face {
-    font-family: Neue Einstellung;
-    src: local("Neue Einstellung Medium"), local("NeueEinstellung-Medium"),
-    url(fonts/13ZL4D5.woff2) format("woff2"), url(fonts/2vntkyX.woff) format("woff");
-    font-weight: 500;
-    font-style: normal;
-}
-@font-face {
-    font-family: Neue Einstellung;
-    src: local("Neue Einstellung Regular"), local("NeueEinstellung-Regular"),
-    url(fonts/2ouwpzi.woff2) format("woff2"), url(fonts/2pyXnS9.woff) format("woff");
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: Neue Einstellung;
-    src: local("Neue Einstellung Black"), local("NeueEinstellung-Black"),
-    url(fonts/ixbr3lb.woff2) format("woff2"), url(fonts/31B9yHt.woff) format("woff");
-    font-weight: 900;
-    font-style: normal;
+    font-display: swap;
 }

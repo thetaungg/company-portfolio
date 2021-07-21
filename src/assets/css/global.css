@@ -55,16 +55,21 @@ html {
 body {
   font-size: 1.4rem;
   color: #424242;
-  font-family: Neue Einstellung, "Helvetica", Arial,sans-serif;
+  font-family: "AvertaStd", Helvetica, sans-serif;
+  font-weight: 600;
 }
 
 h1, h2, h3, h4, h5, h6 {
   /*font-family: "Poppins", sans-serif;*/
-  font-family: "Fredoka One", cursive;
-  font-weight: 400;
+  font-family: "AvertaStd", cursive;
+}
+
+h1 {
+  font-weight: 900;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
+  font-weight: 600;
 }

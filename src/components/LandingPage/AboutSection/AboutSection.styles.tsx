@@ -9,6 +9,7 @@ export const container = css`
   position: relative;
   background: #1e1e1e;
   color: #fff;
+  overflow: hidden;
 
   @media only screen and (max-width: 1225px) {
     padding-top: 6rem;

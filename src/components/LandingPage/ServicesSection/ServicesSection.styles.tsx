@@ -5,16 +5,17 @@ export const container = css`
   height: 100%;
   padding: 8rem 8rem 4rem 12rem;
   color: #fff;
-  background-color: #053742;
+  background-color: #5f4993;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 
   @media only screen and (max-width: 1065px) {
     padding: 8rem 8rem 4rem;
   }
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 975px) {
     padding: 8rem 4rem 4rem;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   @media only screen and (max-width: 465px) {
@@ -23,7 +24,7 @@ export const container = css`
 `;
 
 export const heading = (isVisible: boolean) => css`
-  font-size: 8rem;
+  font-size: 10rem;
   transition: all 1.5s ease;
 
   ${isVisible
@@ -35,51 +36,50 @@ export const heading = (isVisible: boolean) => css`
   `};
 
   @media only screen and (max-width: 1125px) {
-    font-size: 7rem;
+    font-size: 8rem;
   }
 
   @media only screen and (max-width: 1065px) {
-    font-size: 6rem;
+    font-size: 7rem;
   }
   @media only screen and (max-width: 975px) {
+    font-size: 6rem;
+  }
+  @media only screen and (max-width: 650px) {
+    overflow-x: auto;
+  }
+
+  @media only screen and (max-width: 465px) {
     font-size: 5rem;
   }
-
-  @media only screen and (max-width: 650px) {
-    font-size: 4rem;
-  }
-  @media only screen and (max-width: 465px) {
-    font-size: 3rem;
-  }
 `;
 
-export const services = css`
+export const textContainer = css`
   display: flex;
-  margin-top: 3rem;
-  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  padding-top: 5rem;
+
+  @media only screen and (max-width: 975px) {
+    width: 100%;
+  }
   @media only screen and (max-width: 650px) {
-    flex-direction: column;
-    margin-top: 2rem;
+    padding: 2rem;
   }
 `;
 
-export const textGroup = css`
-  flex-basis: 50%;
-  height: 100%;
-
-  &:not(:last-of-type) {
-    margin-right: 4rem;
-
-    @media only screen and (max-width: 650px) {
-      margin-right: 0;
-    }
-  }
-`;
-
-export const serviceHeading = (isVisible: boolean, orientation: "left" | "right") => css`
-  font-size: 3rem;
-  margin-left: 0.5rem;
-
+export const contactUsBtn = (isVisible: boolean) => css`
+  padding: 2rem 4rem;
+  margin-top: 4rem;
+  font-weight: 700;
+  font-size: 2rem;
+  background-color: #2573a7;
+  border: 1px solid #164666;
+  color: #f5f5f5;
+  border-radius: 0.4rem;
+  text-transform: uppercase;
+  cursor: pointer;
   transition: all 1s ease;
 
   ${isVisible
@@ -87,118 +87,67 @@ export const serviceHeading = (isVisible: boolean, orientation: "left" | "right"
      transform: translateX(0); 
   `
     : `
-     transform: ${orientation === "left" ? "translateX(-60%)" : "translateX(60%)"} ;
+     transform: translateX(-80%);
   `};
 
   @media only screen and (max-width: 1125px) {
-    font-size: 2.5rem;
+    padding: 1.5rem 3rem;
   }
 
-  @media only screen and (max-width: 1065px) {
-    font-size: 2rem;
-  }
   @media only screen and (max-width: 975px) {
-    font-size: 2rem;
+    margin-top: 2rem;
   }
+
   @media only screen and (max-width: 650px) {
-    font-size: 1.8rem;
+    display: none;
   }
 `;
 
-export const list = css`
+export const services = (isVisible: boolean) => css`
+  width: 70%;
+  padding: 5rem 4rem 5rem 10rem;
   display: flex;
-  flex-direction: column;
-  margin-top: 2rem;
-
-  @media only screen and (max-width: 650px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1rem;
-  }
-`;
-
-export const listItem = (
-  isVisible: boolean,
-  orientation: "left" | "right",
-  animationTiming: number
-) => css`
-  display: flex;
-  align-items: flex-start;
-  font-size: 1.8rem;
-  font-weight: 600;
-  transition: all ${animationTiming}s ease;
-
-  &:not(:last-of-type) {
-    margin-bottom: 2.5rem;
-  }
+  flex-wrap: wrap;
+  height: fit-content;
+  transition: all 2s ease;
 
   ${isVisible
     ? `
      transform: translateX(0); 
   `
     : `
-     transform: ${orientation === "left" ? "translateX(-60%)" : "translateX(60%)"} ;
+     transform: translateX(40%);
   `};
 
   @media only screen and (max-width: 1125px) {
-    font-size: 1.7rem;
+    padding: 5rem 3rem 5rem 5rem;
   }
 
-  @media only screen and (max-width: 1065px) {
+  @media only screen and (max-width: 975px) {
+    width: 100%;
+    padding: 5rem 3rem 5rem 5rem;
+  }
+  @media only screen and (max-width: 650px) {
+    padding: 0 3rem 5rem 0;
+  }
+`;
+
+export const service = css`
+  background-color: #edecec;
+  color: #424242;
+  padding: 1.2rem 2rem;
+  border-radius: 2.5rem;
+  border: 1px solid #424242;
+  width: fit-content;
+  height: fit-content;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 1rem 0.6rem;
+
+  @media only screen and (max-width: 650px) {
+    padding: 1rem 1.5rem;
     font-size: 1.5rem;
-  }
-
-  @media only screen and (max-width: 975px) {
-    font-size: 1.4rem;
-
-    &:not(:last-of-type) {
-      margin-bottom: 1rem;
-    }
-  }
-
-  @media only screen and (max-width: 650px) {
-    &:not(:last-of-type) {
-      margin-bottom: 3rem;
-    }
-  }
-`;
-
-export const iconContainer = css`
-  margin-right: 1.5rem;
-  margin-top: -1rem;
-  svg {
-    width: 4rem;
-  }
-
-  @media only screen and (max-width: 650px) {
-    svg {
-      width: 3rem;
-    }
-  }
-`;
-
-export const col = css`
-  display: flex;
-  flex-direction: column;
-`;
-
-export const serviceDetails = css`
-  font-size: 1.4rem;
-  font-weight: 400;
-  margin-top: 0.5rem;
-
-  @media only screen and (max-width: 1125px) {
-    font-size: 1.3rem;
-  }
-
-  @media only screen and (max-width: 1065px) {
-    font-size: 1.2rem;
-  }
-
-  @media only screen and (max-width: 975px) {
-    font-size: 1.1rem;
-  }
-  @media only screen and (max-width: 650px) and (max-height: 813px) {
-    display: none;
+    margin: 0.6rem 0.4rem;
+    border-radius: 2rem;
   }
 `;

@@ -11,6 +11,9 @@ function SEO({ description = "", lang = "en", meta = [], title }: SEOProps) {
             title
             description
             author
+            image
+            siteName
+            url
           }
         }
       }
@@ -45,6 +48,18 @@ function SEO({ description = "", lang = "en", meta = [], title }: SEOProps) {
           content: `website`,
         },
         {
+          property: `og:site_name`,
+          content: site.siteMetadata?.siteName || ``,
+        },
+        {
+          property: `og:url`,
+          content: site.siteMetadata?.url || ``,
+        },
+        {
+          property: `og:image`,
+          content: site.siteMetadata?.image || ``,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
@@ -59,6 +74,14 @@ function SEO({ description = "", lang = "en", meta = [], title }: SEOProps) {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:url`,
+          content: site.siteMetadata?.url || ``,
+        },
+        {
+          name: `twitter:image`,
+          content: site.siteMetadata?.image || ``,
         },
       ].concat(meta)}
     />

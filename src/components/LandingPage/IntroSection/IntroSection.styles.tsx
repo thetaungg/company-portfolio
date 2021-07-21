@@ -10,6 +10,7 @@ export const container = css`
   background: #1b3451;
   color: #fff;
   position: relative;
+  overflow: hidden;
 
   @media only screen and (max-width: 1065px) {
     padding-top: 20rem;

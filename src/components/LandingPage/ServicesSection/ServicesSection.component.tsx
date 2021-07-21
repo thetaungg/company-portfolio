@@ -1,96 +1,37 @@
 import React, { useContext } from "react";
-import CheckMark from "../../../assets/images/icons/icons8-checkmark.inline.svg";
 import { NavigationContext } from "../../../contexts/navigation/navigation.context";
 import * as styles from "./ServicesSection.styles";
 
 const services = [
-  {
-    id: 1,
-    heading: "IT Services",
-    items: [
-      {
-        id: 20,
-        name: "IT Outsourcing Service",
-        desc:
-          "Sit back and relax: We’ve got your IT Systems covered with unlimited support all day, every day",
-      },
-      {
-        id: 28,
-        name: "Digital Marketing",
-        desc:
-          "With Social Media Marketing, SEO, and training your employees, we'll transform your marketing team into the next level.",
-      },
-      {
-        id: 35,
-        name: "Digital Transformation & Consulting",
-        desc: "Transform you business into the next level using the latest technologies available.",
-      },
-    ],
-  },
-  {
-    id: 2,
-    heading: "Software Development",
-    items: [
-      {
-        id: 21,
-        name: "Web Development",
-        desc:
-          "Quality is our main focus. We leverage the latest technologies available(React, Vue, Node, etc) and deliver you the most reliable products.",
-      },
-      {
-        id: 27,
-        name: "Web Application Maintenance",
-        desc:
-          "We can help you update your website, fix bugs, resolve security risks, and migrate into the new and better frameworks.",
-      },
-      {
-        id: 32,
-        name: "Web Hosting",
-        desc:
-          "Let us worry about all the complex server setups for hosting and security for your website.",
-      },
-      {
-        id: 38,
-        name: "System Integration",
-        desc:
-          "If you want to integrate your existing platform with third-party systems, like Stripe, Wave Money, Google Maps, etc, we can help you with that.",
-      },
-    ],
-  },
+  "IT Outsourcing Service",
+  "IT Helpdesk Service",
+  "IT Backoffice Support",
+  "Digital Marketing",
+  "Digital Consulting",
+  "Data Entry",
+  "Web Design & Development",
+  "Web Application Maintenance",
+  "Web Hosting",
+  "Portfolio",
+  "E-commerce",
 ];
 
 const ServicesSection = () => {
-  const { currentPage } = useContext(NavigationContext);
+  const { currentPage, onPageChange } = useContext(NavigationContext);
   const isVisible = () => currentPage === 2;
   return (
     <section css={styles.container}>
-      <h1 css={styles.heading(isVisible())}>Services</h1>
+      <div css={styles.textContainer}>
+        <h1 css={styles.heading(isVisible())}>Services</h1>
+        <button css={styles.contactUsBtn(isVisible())} onClick={() => onPageChange(3)}>
+          Contact Us
+        </button>
+      </div>
 
-      <div css={styles.services}>
-        {services.map((service) => (
-          <div key={service.id} css={styles.textGroup}>
-            <h5 css={styles.serviceHeading(isVisible(), service.id === 1 ? "left" : "right")}>
-              {service.heading}
-            </h5>
-            <div css={styles.list}>
-              {service.items.map((item) => (
-                <div
-                  key={item.id}
-                  css={styles.listItem(
-                    isVisible(),
-                    service.id === 1 ? "left" : "right",
-                    1.3 + item.id / 100
-                  )}>
-                  <div css={styles.iconContainer}>
-                    <CheckMark />
-                  </div>
-                  <div css={styles.col}>
-                    <span>{item.name}</span>
-                    <span css={styles.serviceDetails}>{item.desc}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
+      <div css={styles.services(isVisible())}>
+        {services.map((service, i) => (
+          <div key={i} css={styles.service}>
+            {service}
           </div>
         ))}
       </div>

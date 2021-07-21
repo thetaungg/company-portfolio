@@ -3,6 +3,9 @@ module.exports = {
     title: `Cyber Genius - IT Service and Software Company in Myanmar`,
     description: `IT Service and Software Company in Myanmar`,
     author: `Thet Aung`,
+    image: `https://cybergenius.s3.amazonaws.com/cg-landing.png`,
+    siteName: `Cyber Genius`,
+    url: `https://www.cybergenius.co`,
   },
   plugins: [
     {
