@@ -6,7 +6,7 @@ export const container = css`
   padding: 10rem 8rem 4rem 8rem;
   display: flex;
   position: relative;
-  background: #1d334f;
+  background: #334257; /*334257 */
   color: #fff;
 
   @media only screen and (max-width: 1065px) {

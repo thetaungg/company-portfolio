@@ -3,17 +3,17 @@ import { NavigationContext } from "../../../contexts/navigation/navigation.conte
 import * as styles from "./ServicesSection.styles";
 
 const services = [
-  "IT Outsourcing Service",
-  "IT Helpdesk Service",
-  "IT Backoffice Support",
-  "Digital Marketing",
-  "Digital Consulting",
-  "Data Entry",
   "Web Design & Development",
   "Web Application Maintenance",
   "Web Hosting",
   "Portfolio",
   "E-commerce",
+  "Digital Marketing",
+  "Digital Consulting",
+  "IT Outsourcing Service",
+  "IT Helpdesk Service",
+  "IT Backoffice Support",
+  "Data Entry",
 ];
 
 const ServicesSection = () => {

@@ -98,10 +98,12 @@ export const button = css`
 
   &:hover {
     background-color: #2573a7;
+    transform: scale(1.02);
   }
 
   &:active {
     background-color: #2980b9;
+    transform: scale(0.99);
   }
   &[disabled] {
     cursor: initial;

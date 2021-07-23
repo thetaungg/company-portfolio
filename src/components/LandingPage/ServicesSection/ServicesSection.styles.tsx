@@ -5,7 +5,7 @@ export const container = css`
   height: 100%;
   padding: 8rem 8rem 4rem 12rem;
   color: #fff;
-  background-color: #5f4993;
+  background-color: #2c2e43;
   display: flex;
   align-items: center;
 
@@ -80,6 +80,7 @@ export const contactUsBtn = (isVisible: boolean) => css`
   border-radius: 0.4rem;
   text-transform: uppercase;
   cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   transition: all 1s ease;
 
   ${isVisible
@@ -140,6 +141,7 @@ export const service = css`
   border: 1px solid #424242;
   width: fit-content;
   height: fit-content;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   font-size: 1.7rem;
   font-weight: 700;
   margin: 1rem 0.6rem;

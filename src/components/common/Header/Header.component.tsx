@@ -9,10 +9,8 @@ const HeaderComponent = () => {
   return (
     <header css={styles.header}>
       <div css={styles.wrapper}>
-        <div css={styles.logoContainer}>
-          <a href="#" css={styles.name}>
-            CYBER GENIUS
-          </a>
+        <div css={styles.logoContainer} onClick={() => onPageChange(0)}>
+          <span css={styles.name}>CYBER GENIUS</span>
         </div>
 
         {/*<h1 css={styles.name}>CyberGenius</h1>*/}

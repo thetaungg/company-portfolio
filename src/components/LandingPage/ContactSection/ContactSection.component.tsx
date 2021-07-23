@@ -35,7 +35,7 @@ const ContactSection = () => {
               <PhoneIcon />
               Phone
             </h5>
-            <p css={styles.contactText}>+959 961 212 217</p>
+            {/*<p css={styles.contactText}>+959 961 212 217</p>*/}
             <p css={styles.contactText}>+959 799 580 164</p>
             <p css={styles.contactText}>+959 777 627 355</p>
           </div>

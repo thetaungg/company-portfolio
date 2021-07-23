@@ -4,7 +4,10 @@ import { moveInTop } from "../../animation.styles";
 export const container = css`
   width: 100%;
   height: 100%;
-  padding: 10rem 2rem 2rem 10rem;
+  padding-top: 10rem;
+  padding-right: 2rem;
+  padding-left: 10rem;
+  padding-bottom: 2rem;
   display: flex;
   align-items: flex-start;
   background: #1b3451;
@@ -13,7 +16,7 @@ export const container = css`
   overflow: hidden;
 
   @media only screen and (max-width: 1065px) {
-    padding-top: 20rem;
+    padding-top: 18rem;
     padding-left: 7rem;
   }
 
@@ -32,7 +35,7 @@ export const container = css`
   }
 
   @media only screen and (max-height: 900px) {
-    padding-top: 16rem;
+    padding-top: 15rem;
   }
 
   @media only screen and (max-height: 775px) {

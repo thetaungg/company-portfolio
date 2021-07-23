@@ -37,9 +37,9 @@ export const logoContainer = css`
   border-radius: 50%;
   border: 1px solid #c4c4c4;
   padding: 0.5rem;
-  cursor: pointer;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1rem);
   overflow: hidden; */
+  cursor: pointer;
 
   img {
     width: 100%;
