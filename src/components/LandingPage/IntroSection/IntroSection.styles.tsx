@@ -4,10 +4,7 @@ import { moveInTop } from "../../animation.styles";
 export const container = css`
   width: 100%;
   height: 100%;
-  padding-top: 10rem;
-  padding-right: 2rem;
-  padding-left: 10rem;
-  padding-bottom: 2rem;
+  padding: 10rem 2rem 2rem 10rem;
   display: flex;
   align-items: flex-start;
   background: #1b3451;

@@ -7,7 +7,7 @@ export const container = css`
   display: flex;
   align-items: center;
   position: relative;
-  background: #2b2b2b;
+  background: #191919;
   color: #fff;
   overflow: hidden;
 

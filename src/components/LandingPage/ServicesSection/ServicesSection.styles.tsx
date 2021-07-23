@@ -5,7 +5,7 @@ export const container = css`
   height: 100%;
   padding: 8rem 8rem 4rem 12rem;
   color: #fff;
-  background-color: #2c2e43;
+  background-color: hsl(232, 21%, 35%);
   display: flex;
   align-items: center;
 
@@ -80,7 +80,7 @@ export const contactUsBtn = (isVisible: boolean) => css`
   border-radius: 0.4rem;
   text-transform: uppercase;
   cursor: pointer;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
   transition: all 1s ease;
 
   ${isVisible
