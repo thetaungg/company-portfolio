@@ -3,7 +3,7 @@ module.exports = {
     title: `Cyber Genius - IT Service and Software Company in Myanmar`,
     description: `IT Service and Software Company in Myanmar`,
     author: `Thet Aung`,
-    image: `https://cybergenius.s3.amazonaws.com/cg-landing.png`,
+    image: `https://cybergenius.s3.amazonaws.com/cg-landing.jpg`,
     siteName: `Cyber Genius`,
     url: `https://www.cybergenius.co`,
   },
@@ -43,7 +43,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/images/genius-b-01.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/favicon-16x16.png`, // This path is relative to the root of the site.
       },
     },
     {
