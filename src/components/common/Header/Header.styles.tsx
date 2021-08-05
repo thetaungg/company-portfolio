@@ -40,9 +40,14 @@ export const logoContainer = css`
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1rem);
   overflow: hidden; */
   cursor: pointer;
+  height: 6rem;
+
+  @media only screen and (max-width: 650px) {
+    height: 4rem;
+  }
 
   img {
-    width: 100%;
+    height: 100%;
   }
 `;
 
