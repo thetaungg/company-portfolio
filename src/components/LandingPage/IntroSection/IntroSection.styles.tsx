@@ -47,8 +47,11 @@ export const container = css`
     padding-top: 12rem;
   }
 
-  @media only screen and (min-height: 900px) {
+  @media only screen and (min-height: 900px) and (max-width: 1200px) {
     padding-top: 22rem;
+  }
+  @media only screen and (min-width: 109.375em) and (max-height: 675px) {
+    padding-top: 10rem;
   }
 `;
 

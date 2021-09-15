@@ -6,6 +6,7 @@ import "../assets/css/global.css";
 import SEO from "../components/seo";
 import SideBar from "../components/common/SideBar/SideBar.component";
 import { NavigationProvider } from "../contexts/navigation/navigation.context";
+import FloatingMessengerBtn from "../components/common/FloatingMessengerBtn/FloatingMessengerBtn.component";
 
 const DefaultLayout = ({ children }: LayoutProps) => {
   const data = useStaticQuery(graphql`
@@ -26,6 +27,7 @@ const DefaultLayout = ({ children }: LayoutProps) => {
         <div css={body}>
           <SideBar />
           <main css={main}>{children}</main>
+          <FloatingMessengerBtn />
           <footer
             style={{
               marginTop: `2rem`,
