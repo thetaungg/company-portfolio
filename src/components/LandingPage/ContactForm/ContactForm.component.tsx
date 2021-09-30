@@ -128,7 +128,7 @@ const ContactForm = ({ isVisible }: ContactFormProps) => {
           onChange={(e: ChangeEvent<HTMLTextAreaElement>) => onChange("message", e)}
         />
         <ReCAPTCHA
-          sitekey="6LcxRIAbAAAAAIaULkuAPjY5SgbMyhUp14fCQHdC"
+          sitekey={process.env.GATSBY_RECAPTCHA_SITEKEY as string}
           onChange={onRecaptchaChange}
           onExpired={() => onRecaptchaChange("")}
         />
